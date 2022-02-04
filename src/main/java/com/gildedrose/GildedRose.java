@@ -1,6 +1,7 @@
 package com.gildedrose;
 
 class GildedRose {
+    public static final int MAX_QUALITY = 50;
     Item[] items;
 
     public GildedRose(Item[] items) {
@@ -47,7 +48,7 @@ class GildedRose {
                 }
             }
         } else {
-            if (item.quality < 50) {
+            if (item.quality < MAX_QUALITY) {
                 item.quality++;
 
                 if (isBackstage(item)) {
@@ -94,7 +95,7 @@ class GildedRose {
     }
 
     private void qualityCheck(Item item) {
-        if (item.quality < 50) {
+        if (item.quality < MAX_QUALITY) {
             item.quality++;
         }
     }

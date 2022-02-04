@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class GildedRoseTest {
-    private GildedRose getGildedRose(String cake, int sellIn, int quality) {
+    private GildedRose getGildedRose(String name, int sellIn, int quality) {
         Item[] items = new Item[] {
-                new Item(cake, sellIn, quality)
+                new Item(name, sellIn, quality)
         };
         GildedRose gildedRose = new GildedRose(items);
         gildedRose.updateQuality();
